@@ -1,0 +1,401 @@
+/* ===== CONTENEDOR ROOT ===== */
+:root {
+  --color-bg: #d9f0e1; /* verde pastel suave */
+  --color-card-bg: #ffffff;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-secondary: #10b981;
+  --color-secondary-hover: #059669;
+  --color-text: #1f2937;
+  --color-nav-bg: rgba(255, 255, 255, 0.85);
+  --color-link-hover: #2563eb;
+  --color-project-img-bg: #e5e7eb;
+}
+
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ===== NAVBAR GLASS ===== */
+.nav {
+  backdrop-filter: blur(8px);
+  background: var(--color-nav-bg);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== HERO ===== */
+.avatar {
+  width: 160px !important;
+  height: 160px !important;
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 4px solid white;
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--color-card-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+  padding: 20px;
+  transition: 0.2s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== GRID RESPONSIVE ===== */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ===== TEXTOS ===== */
+p {
+  line-height: 1.6;
+  font-size: 1.02rem;
+  color: var(--color-text);
+}
+
+/* ===== BOTÓN BANDERAS ===== */
+.lang-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+/* ===== PROJECTS GRID ===== */
+.projects-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ===== CARD ===== */
+.project-card {
+  background: var(--color-card-bg);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  transition: .25s ease;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* links dentro de cards */
+.project-card .links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.project-card a {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  section {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===== NAVBAR BASE ===== */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
+  backdrop-filter: blur(8px);
+  background: var(--color-nav-bg);
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+}
+
+/* ===== NAV LINKS DESKTOP ===== */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* ===== HAMBURGUESA ===== */
+.hamburger {
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* ===== BANDERA ===== */
+.lang-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+/* ======= MOBILE MODE ======= */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    right: 14px;
+    background: var(--color-card-bg);
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    border-radius: 14px;
+    padding: 14px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 180px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+  }
+}
+
+/* ===== ESTILO LINKS NAV ===== */
+.nav-links a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--color-text);
+  transition: .25s ease;
+}
+
+/* hover moderno */
+.nav-links a:hover {
+  background: var(--color-primary)15;
+  color: var(--color-link-hover);
+}
+
+/* estado activo al hacer click */
+.nav-links a:active {
+  transform: scale(.96);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .nav-links a {
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 10px;
+  }
+
+  .nav-links a:hover {
+    background: var(--color-primary)10;
+  }
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background: var(--color-primary);
+  transition: .25s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.project-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--color-project-img-bg);
+  border-radius: 12px;
+  padding: 6px;
+}
+
+/* mini zoom bonito */
+.project-img:hover {
+  transform: scale(1.02);
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+/* ===== BOTONES GENERALES ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .25s ease;
+  border: 2px solid transparent;
+}
+
+/* ===== PRIMARY BUTTON (Demo) ===== */
+.btn.primary {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, .25);
+}
+
+.btn.primary:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+/* ===== SECONDARY BUTTON (Repos) ===== */
+.btn.secondary {
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  border-color: #e5e7eb;
+}
+
+.btn.secondary:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+/* ===== ACTIVE CLICK EFFECT ===== */
+.btn:active {
+  transform: scale(.96);
+}
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  padding: 60px 20px;
+  background-color: var(--color-bg); /* fondo verde suave o pastel si lo cambiaste */
+}
+
+/* Grid principal: card de info + formulario */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Card de info de contacto */
+.contact-info {
+  padding: 25px;
+  border-radius: 16px;
+  background: var(--color-card-bg);
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+}
+
+/* Mensaje introductorio dentro de la card */
+.contact-info p:first-child {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* Links de GitHub / LinkedIn */
+.contact-info a {
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: .25s;
+}
+
+.contact-info a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Card del formulario */
+.contact-form {
+  padding: 25px;
+  border-radius: 16px;
+  background: var(--color-card-bg);
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
+}
+
+/* Formulario */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs y textarea */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Botón enviar */
+.contact-form .btn.primary {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
