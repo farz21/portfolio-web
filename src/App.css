@@ -73,10 +73,32 @@ p {
 }
 
 /* ===== BOTÓN BANDERAS ===== */
-.lang-btn img {
-  width: 28px;
-  height: 28px;
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-card-bg);
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
+.lang-btn img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: var(--color-primary-hover);
+  color: white;
+}
+
+
+
 
 /* ===== PROJECTS GRID ===== */
 .projects-grid {

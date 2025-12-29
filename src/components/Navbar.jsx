@@ -23,15 +23,22 @@ export default function Navbar({ lang, setLang, texts }) {
         <a href="#certifications" onClick={() => setOpen(false)}>{texts.nav_certifications}</a>
         <a href="#contact" onClick={() => setOpen(false)}>{texts.nav_contact}</a>
 
-        {/* BOTÓN DE BANDERAS */}
+        {/* BOTÓN DE BANDERAS + TEXTO */}
         <button
           className="lang-btn"
           onClick={() => setLang(lang === "es" ? "en" : "es")}
         >
-          <img
-            src={lang === "es" ? "/us.png" : "/es.png"}
-            alt="Cambiar idioma"
-          />
+          {lang === "es" ? (
+            <>
+              <img src="/us.png" alt="English" />
+              <span>English</span>
+            </>
+          ) : (
+            <>
+              <img src="/es.png" alt="Español" />
+              <span>Español</span>
+            </>
+          )}
         </button>
       </nav>
     </header>
