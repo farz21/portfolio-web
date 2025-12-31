@@ -1,6 +1,7 @@
 /* ===== CONTENEDOR ROOT ===== */
 :root {
   --color-bg: #d9f0e1; /* verde pastel suave */
+  --color-bg-gradient: linear-gradient(135deg, #4fc3f7 0%, #6dd5c4 50%, #8ddf5b 100%);
   --color-card-bg: #ffffff;
   --color-primary: #2563eb;
   --color-primary-hover: #1d4ed8;
@@ -14,9 +15,11 @@
 
 
 body {
-  background-color: var(--color-bg);
+  background: var(--color-bg-gradient);
   color: var(--color-text);
+  min-height: 100vh;
 }
+
 
 #root {
   max-width: 1280px;
