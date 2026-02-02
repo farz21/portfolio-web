@@ -27,7 +27,7 @@ export const texts = {
     project_hotel_back: "Repositorio Backend",
 
     // --- PROYECTO FREAK SHOP (NUEVO) ---
-    project_freak_title: "Freak Shop - E-Commerce Neón",
+    project_freak_title: "Freak Shop - E-Commerce",
     project_freak_desc: "Tienda virtual con estética Cyberpunk especializada en productos geek y coleccionables.",
     project_freak_features_title: "Características Principales:",
     project_freak_point_1: "Gestión de estado global con React Context API.",
@@ -95,7 +95,7 @@ export const texts = {
     project_hotel_back: "Backend Repository",
 
     // --- FREAK SHOP PROJECT (NEW) ---
-    project_freak_title: "Freak Shop - Neon E-Commerce",
+    project_freak_title: "Freak Shop - E-Commerce",
     project_freak_desc: "Virtual store with Cyberpunk aesthetics specializing in geek products and collectibles.",
     project_freak_features_title: "Main Features:",
     project_freak_point_1: "Global state management with React Context API.",
