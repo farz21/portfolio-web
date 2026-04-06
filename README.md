@@ -1,4 +1,5 @@
-# Portfolio Web - Fabrizio "Farz" Coronel
+# Portfolio Web - Fabrizio Coronel
+Available in Spanish & English
 
 Este es mi portfolio personal como desarrollador, donde muestro mis proyectos, habilidades y evolución en el mundo de la programación.
 
@@ -27,3 +28,4 @@ Incluye:
 - Sección de proyectos con detalles
 - Código modular y reutilizable
 - Buenas prácticas de desarrollo frontend
+- Cambio de idioma mediante botón interactivo con bandera
