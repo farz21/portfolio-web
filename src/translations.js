@@ -5,9 +5,9 @@ export const texts = {
     cv_button: "Ver CV",
     about_title: "Sobre mí",
     about_description:
-      "Soy desarrollador Web Fullstack. Estoy por comenzar el segundo año de la Tecnicatura Universitaria en Programación en la UTN–FRT. Cuento con experiencia en proyectos individuales y colaborativos trabajando con HTML, CSS, JavaScript, React, MySQL y MongoDB.",
+      "Soy desarrollador Web FullStack. Estoy en el segundo año de la Tecnicatura Universitaria en Programación en la UTN–FRT. Cuento con experiencia en proyectos individuales y colaborativos trabajando con HTML, CSS, JavaScript, React, MySQL y MongoDB.",
     about_p1:
-      "Soy desarrollador Web Fullstack. Estoy por comenzar el segundo año de la Tecnicatura Universitaria en Programación en la UTN–FRT. Cuento con experiencia en proyectos individuales y colaborativos.",
+      "Soy desarrollador Web FullStack. Estoy en el segundo año de la Tecnicatura Universitaria en Programación en la UTN–FRT. Cuento con experiencia en proyectos individuales y colaborativos.",
     about_p2:
       "Trabajo con HTML, CSS, JavaScript y React, además de bases de datos como MySQL y MongoDB. Me interesa el desarrollo Fullstack y sigo aprendiendo nuevas tecnologías para mejorar mis habilidades.",
 
@@ -73,9 +73,9 @@ export const texts = {
     cv_button: "View Resume",
     about_title: "About me",
     about_description:
-      "I am a Fullstack Web Developer. I am about to start the second year of the Programming Technician degree at UTN–FRT. I have experience in individual and collaborative projects working with HTML, CSS, JavaScript, React, MySQL and MongoDB.",
+      "I am a Full Stack Web Developer. I am in my second year of the University Technical Degree in Programming at UTN–FRT. I have experience in both individual and collaborative projects.",
     about_p1:
-      "I am a Fullstack Web Developer. I am about to start the second year of the Programming Technician degree at UTN–FRT. I have experience in both individual and team projects.",
+      "I am a Full Stack Web Developer. I am in my second year of the University Technical Degree in Programming at UTN–FRT. I have experience in both individual and collaborative projects.",
     about_p2:
       "I work with HTML, CSS, JavaScript and React, as well as databases such as MySQL and MongoDB. I am interested in Fullstack development and I keep learning new technologies to improve my skills.",
 
