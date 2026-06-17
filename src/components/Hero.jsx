@@ -1,6 +1,6 @@
 export default function Hero({ texts, lang }) {
   // Link del CV según idioma
-  const cvLink = lang === "es" ? "https://drive.google.com/file/d/1FICu5rhtkXk1hqOrnPjOIICRmG4OOZJk/view?usp=sharing" : "https://drive.google.com/file/d/1mL1vc7dfZI0-YfVVzRkKq8anD3sD_x_H/view?usp=sharing";
+  const cvLink = lang === "es" ? "https://drive.google.com/file/d/1tKTzAvPNlhFY4Dplp86H0vC4Qdkm3lAa/view?usp=sharing" : "https://drive.google.com/file/d/1yGDpyHxgB3Sar5vDWTkoUrs_MfHFNFHh/view?usp=sharing";
 
   return (
     <section
