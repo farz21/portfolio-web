@@ -18,7 +18,7 @@ export default function Hero({ texts, lang }) {
     >
       <img
         className="avatar"
-        src="/foto-perfil.jpg"
+        src="/foto-perfil.png"
         alt="Foto de Fabrizio Coronel"
       />
 
