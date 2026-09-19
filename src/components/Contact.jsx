@@ -76,10 +76,6 @@ export default function Contact({ texts }) {
           </form>
         </div>
       </div>
-
-      <footer className="footer" style={{ marginTop: "30px", textAlign: "center" }}>
-        <p>© {new Date().getFullYear()} Fabrizio Coronel. {texts.contact_footer}</p>
-      </footer>
     </section>
   );
 }

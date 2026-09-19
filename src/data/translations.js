@@ -64,6 +64,8 @@ export const texts = {
     contact_send_btn: "Enviar",
     contact_alert: "Mensaje enviado! Gracias 😊",
     tech_stack_title: "Mi Stack Tecnológico",
+    theme_light: "Cambiar a modo claro",
+    theme_dark: "Cambiar a modo oscuro",
     contact_footer: "Todos los derechos reservados."
   },
 
@@ -132,6 +134,8 @@ export const texts = {
     contact_send_btn: "Send",
     contact_alert: "Message sent! Thank you 😊",
     tech_stack_title: "My Tech Stack",
+    theme_light: "Switch to light mode",
+    theme_dark: "Switch to dark mode",
     contact_footer: "All rights reserved."
   }
 };

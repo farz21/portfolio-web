@@ -7,13 +7,13 @@ export default function TechStack({ texts }) {
     { name: ".NET", icon: <SiDotnet color="#512BD4" size={40} /> },
     { name: "React", icon: <FaReact color="#61dafb" size={40} /> },
     { name: "Node.js", icon: <FaNodeJs color="#3c873a" size={40} /> },
-    { name: "Express.js", icon: <SiExpress color="#000000" size={40} /> },
+    { name: "Express.js", icon: <SiExpress color="#5a5858" size={40} /> },
     { name: "JavaScript", icon: <FaJsSquare color="#f7df1e" size={40} /> },
     { name: "HTML5", icon: <FaHtml5 color="#e34c26" size={40} /> },
     { name: "CSS3", icon: <FaCss3Alt color="#264de4" size={40} /> },
     { name: "MySQL", icon: <SiMysql color="#4479A1" size={40} /> },
     { name: "MongoDB", icon: <SiMongodb color="#47A248" size={40} /> },
-    { name: "GitHub", icon: <FaGithub color="#181717" size={40} /> },
+    { name: "GitHub", icon: <FaGithub color="#5a5858" size={40} /> },
   ];
 
   return (
