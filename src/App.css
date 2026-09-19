@@ -91,7 +91,7 @@ header {
 
 /* ===== NAVBAR FLOTANTE CON AUTO-FADE ===== */
 .nav {
-  position: fixed;
+ position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -101,8 +101,8 @@ header {
   justify-content: space-between;
   align-items: center;
   
-  width: 92%;
-  max-width: 900px;
+  width: 95%; /* Ajustado para mejor distribución */
+  max-width: 1100px; /* Ampliado para que los enlaces respiren */
   padding: 12px 24px;
   
   background: var(--color-nav-bg);
@@ -135,6 +135,7 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .nav-brand span {
@@ -151,8 +152,8 @@ header {
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-left: 50px; 
 }
-
 .nav-links a {
   padding: 8px 14px;
   border-radius: 999px;
@@ -476,6 +477,21 @@ p {
 
 /* ===== RESPONSIVE & MOBILE ===== */
 @media (max-width: 768px) {
+  
+.nav {
+    padding: 10px 15px; 
+    width: 96%;
+  }
+
+  /* 2. Achicamos apenas el tamaño de tu nombre para ganar espacio */
+  .nav-brand {
+    font-size: 1.25rem;
+  }
+
+  /* 3. Juntamos un poco más los botones entre sí */
+  .nav-actions {
+    gap: 8px;
+  }
   section {
     padding: 20px 16px;
   }
@@ -487,6 +503,9 @@ p {
   .hamburger {
     display: block;
     color: var(--color-text-heading);
+    padding: 0;
+    margin-left: 4px;
+    font-size: 24px; /* Un poco más pequeña */
   }
   .nav-links {
     position: absolute;
