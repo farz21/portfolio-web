@@ -130,6 +130,12 @@ header {
   letter-spacing: -0.5px; 
   transition: 0.3s ease;
 }
+/* ===== BOTONES DE ACCIÓN (Tema, Idioma, Hamburguesa) ===== */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
 .nav-brand span {
   color: var(--color-primary); 
