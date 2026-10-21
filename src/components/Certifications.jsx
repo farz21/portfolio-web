@@ -38,6 +38,7 @@ export default function Certifications({ texts }) {
           }}
         />
       </div>
+      <br/>
       <div
         className="card certifications-card"
         style={{ maxWidth: "900px", margin: "0 auto", padding: "30px" }}
