@@ -50,6 +50,8 @@ export const texts = {
     certifications_title: "Certificaciones",
     fullstack_certificate:
       "Certificado de Programador Web Fullstack – RollingCode School",
+    powerbi_certificate:
+      "Certificado de Power BI – Santander Open Academy",
 
     nav_home: "Inicio",
     nav_about: "Sobre mí",
@@ -120,6 +122,7 @@ export const texts = {
     certifications_title: "Certifications",
     fullstack_certificate:
       "Fullstack Web Developer Certificate – RollingCode School",
+    powerbi_certificate: "Power BI Certificate – Santander Open Academy",
 
     nav_home: "Home",
     nav_about: "About me",

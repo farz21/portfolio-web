@@ -1,12 +1,27 @@
 export default function Certifications({ texts }) {
   return (
     <section id="certifications" className="certifications-section">
-      <h2 style={{ textAlign: "center", fontSize: "2.5rem", marginBottom: "30px" }}>
+      <h2
+        style={{
+          textAlign: "center",
+          fontSize: "2.5rem",
+          marginBottom: "30px",
+        }}
+      >
         {texts.certifications_title}
       </h2>
 
-      <div className="card certifications-card" style={{ maxWidth: "900px", margin: "0 auto", padding: "30px" }}>
-        <p style={{ fontSize: "1.2rem", textAlign: "center", marginBottom: "25px" }}>
+      <div
+        className="card certifications-card"
+        style={{ maxWidth: "900px", margin: "0 auto", padding: "30px" }}
+      >
+        <p
+          style={{
+            fontSize: "1.2rem",
+            textAlign: "center",
+            marginBottom: "25px",
+          }}
+        >
           {texts.fullstack_certificate}
         </p>
 
@@ -19,7 +34,37 @@ export default function Certifications({ texts }) {
             boxShadow: "0 10px 25px rgba(0,0,0,.08)",
             border: "4px solid white",
             margin: "0 auto",
-            display: "block"
+            display: "block",
+          }}
+        />
+      </div>
+      <div
+        className="card certifications-card"
+        style={{ maxWidth: "900px", margin: "0 auto", padding: "30px" }}
+      >
+        <p
+          style={{
+            fontSize: "1.2rem",
+            textAlign: "center",
+            marginBottom: "25px",
+          }}
+        >
+          {texts.powerbi_certificate}
+        </p>
+
+        <img
+          src="/certificado_powerBI.png"
+          alt="Certificado Power BI"
+          style={{
+            width: "100%",
+            height: "auto",
+            backgroundColor: "#fff",
+            borderRadius: "12px",
+            boxShadow: "0 10px 25px rgba(0,0,0,.08)",
+            border: "4px solid white",
+            margin: "0 auto",
+            display: "block",
+            objectFit: "contain",
           }}
         />
       </div>
