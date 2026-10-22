@@ -19,6 +19,7 @@ export default function Navbar({ lang, setLang, texts, theme, setTheme }) {
         <a href="#home" onClick={() => setOpen(false)}>{texts.nav_home}</a>
         <a href="#about" onClick={() => setOpen(false)}>{texts.nav_about}</a>
         <a href="#projects" onClick={() => setOpen(false)}>{texts.nav_projects}</a>
+        <a href="#tech-stack" onClick={() => setOpen(false)}>{texts.nav_tech_stack}</a>
         <a href="#certifications" onClick={() => setOpen(false)}>{texts.nav_certifications}</a>
         <a href="#contact" onClick={() => setOpen(false)}>{texts.nav_contact}</a>
       </nav>
